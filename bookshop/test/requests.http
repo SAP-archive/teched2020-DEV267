@@ -1,0 +1,51 @@
+@server = http://localhost:4004
+@me = Authorization: Basic {{$processEnv USER}}:
+
+
+### ------------------------------------------------------------------------
+# Get service info
+GET {{server}}/browse
+{{me}}
+
+
+### ------------------------------------------------------------------------
+# Get $metadata document
+GET {{server}}/browse/$metadata
+{{me}}
+
+
+### ------------------------------------------------------------------------
+# Browse Books as any user
+GET {{server}}/browse/Books?
+  # &$select=title,stock
+  # &$expand=currency
+  # &sap-language=de
+{{me}}
+
+
+### ------------------------------------------------------------------------
+# Fetch Authors as admin
+GET {{server}}/admin/Authors?
+  # &$select=name,dateOfBirth,placeOfBirth
+  # &$expand=books($select=title;$expand=currency)
+  # &$filter=ID eq 101
+  # &sap-language=de
+Authorization: Basic alice:
+
+
+### ------------------------------------------------------------------------
+# Submit Order as authenticated user
+# (send that three times to get out-of-stock message)
+POST {{server}}/browse/submitOrder
+Content-Type: application/json
+{{me}}
+
+{ "book":201, "amount":5 }
+
+
+### ------------------------------------------------------------------------
+# Browse Genres
+GET {{server}}/browse/Genres?
+# &$filter=parent_ID eq null&$select=name
+# &$expand=children($select=name)
+{{me}}

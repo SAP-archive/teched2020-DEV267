@@ -1,0 +1,33 @@
+{
+  "name": "@capire/samples",
+  "version": "2.0.0",
+  "description": "A monorepo with several samples for CAP.",
+  "repository": "https://github.com/sap-samples/cloud-cap-samples.git",
+  "author": "daniel.hutzel@sap.com",
+  "dependencies": {
+    "@capire/bookshop": "file:bookshop",
+    "@capire/common": "file:common",
+    "@capire/fiori": "file:fiori",
+    "@capire/orders": "file:orders",
+    "@capire/reviews": "file:reviews",
+    "@capire/tests": "file:test"
+  },
+  "devDependencies": {
+    "chai": "^4.2.0",
+    "chai-as-promised": "^7.1.1",
+    "chai-subset": "^1.6.0",
+    "sqlite3": "^4"
+  },
+  "scripts": {
+    "bookshop": "cds watch bookshop",
+    "fiori": "cds watch fiori",
+    "mocha": "npx mocha || echo",
+    "jest": "npx jest --verbose",
+    "test": "npm run jest -s"
+  },
+  "jest": {
+    "testEnvironment": "node"
+  },
+  "license": "SAP SAMPLE CODE LICENSE",
+  "private": true
+}

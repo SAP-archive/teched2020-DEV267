@@ -1,0 +1,24 @@
+{
+  "name": "@capire/reviews",
+  "version": "1.0.0",
+  "files": [
+    "db",
+    "srv",
+    "index.cds"
+  ],
+  "dependencies": {
+    "@sap/cds": ">=3.33.1",
+    "express": "^4.17.1"
+  },
+  "scripts": {
+    "reviews-service": "cds watch",
+    "books-reviewed": "cds watch ../reviewed"
+  },
+  "cds": {
+    "requires": {
+      "db": {
+        "kind": "sql"
+      }
+    }
+  }
+}
