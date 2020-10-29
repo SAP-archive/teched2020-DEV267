@@ -1,7 +1,7 @@
 Format: https://www.debian.org/doc/packaging-manuals/copyright-format/1.0/
-Upstream-Name: teched2020-DT267
-Upstream-Contact: <insert contact name> (<insert_contact_email>)
-Source: https://github.com/sap-samples/teched2020-DT267
+Upstream-Name: teched2020-DEV267
+Upstream-Contact: Sagari Arora<sagari.arora@sap.com>, Maxim Naidenov<maxim.naidenov@sap.com>, Georg Bischoff<georg.bischoff@sap.com>, Hristov Manchev<hristov.manchev@sap.com>
+Source: https://github.com/sap-samples/teched2020-DEV267
 Disclaimer: The code in this project may include calls to APIs (“API Calls”) of
  SAP or third-party products or services developed outside of this project
  (“External Products”).
@@ -25,5 +25,5 @@ Disclaimer: The code in this project may include calls to APIs (“API Calls”)
  parties the right to use of access any SAP External Product, through API Calls.
 
 Files: * 
-Copyright: 2020 SAP SE or an SAP affiliate company and teched2020-DT267 contributors
+Copyright: 2020 SAP SE or an SAP affiliate company and teched2020-DEV267 contributors
 License: Apache-2.0
