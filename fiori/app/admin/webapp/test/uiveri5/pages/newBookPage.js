@@ -1,7 +1,11 @@
 module.exports = createPageObjects({
   NewBook: {
-    actions: {},
+    actions: {
 
-    assertions: {},
+    },
+
+    assertions: {
+      
+    },
   },
 });

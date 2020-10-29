@@ -1,7 +1,11 @@
 module.exports = createPageObjects({
   ManageBooks: {
-    actions: {},
+    actions: {
 
-    assertions: {},
+    },
+
+    assertions: {
+      
+    },
   },
 });
