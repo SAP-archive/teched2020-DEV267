@@ -9,14 +9,12 @@
     "@capire/common": "file:common",
     "@capire/fiori": "file:fiori",
     "@capire/orders": "file:orders",
-    "@capire/reviews": "file:reviews",
-    "@capire/tests": "file:test"
+    "@capire/reviews": "file:reviews"
   },
   "devDependencies": {
     "chai": "^4.2.0",
     "chai-as-promised": "^7.1.1",
-    "chai-subset": "^1.6.0",
-    "sqlite3": "^4"
+    "chai-subset": "^1.6.0"
   },
   "scripts": {
     "bookshop": "cds watch bookshop",
