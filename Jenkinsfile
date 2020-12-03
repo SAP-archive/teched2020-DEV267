@@ -3,10 +3,14 @@
 
 node {
     stage("System tests") {
+        // Delete all old files to begin with clean workspace
         sh 'rm -rf /var/jenkins_home/workspace/${JOB_NAME}/*'
+
+        // Checkout git repository wich contains the application and UiVeri5 tests
+        // Git url is propageted through the pipelines configuration
         git scm.userRemoteConfigs[0].url
            
-        // Setup the environment to start the application with CAP server
+        // Setup the environment to start the application with CAP server - npm install of all required tools
         // and execute UiVeri5 system tests
         uiVeri5ExecuteTests script: this,
         installCommand: "npm install @sap/cds --global --quiet && NPM_CONFIG_PREFIX=/home/node/.npm-global npm install @sap/cds-dk --global --quiet --force && NPM_CONFIG_PREFIX=/home/node/.npm-global npm install @ui5/uiveri5 --global --quiet && npm install --force && cd fiori && (/home/node/.npm-global/lib/node_modules/@sap/cds/bin/cds.js watch > cds.log 2>&1 &)",
