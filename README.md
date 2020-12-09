@@ -10,8 +10,11 @@ SAPUI5, as a UI technology, provides all the resources you need to build SAP Fio
 ## Presentation
 You can find the presentation [here](DEV267.pdf)
 
-## Excercise
+## Exercise
 You can access the exercise guide in the [Tutorial Navigator](https://developers.sap.com/tutorials/cp-uiveri5-cap.html)
+
+## Troubleshooting
+in case of issues please also check [Troubleshooting guide](troubleshooting.md)
 ## How to obtain support
 
 Support for the content in this repository is available during the actual time of the online session for which this content has been designed. Otherwise, you may request support via the [Issues](../../issues) tab.
