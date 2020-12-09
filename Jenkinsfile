@@ -4,7 +4,7 @@
 node {
     stage("System tests") {
         // Delete all old files to begin with clean workspace
-        sh 'rm -rf /var/jenkins_home/workspace/${JOB_NAME}/*'
+        sh 'rm -rf ${WORKSPACE}/*'
        
         // Checkout git repository wich contains the application and UIVeri5 tests
         // Git url is propageted through the pipelines configuration 
