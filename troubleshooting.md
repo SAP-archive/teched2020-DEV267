@@ -74,9 +74,14 @@
 11. **Permission denied while trying to connect to the Docker daemon socket**
     To fix the problem, use the step process guide below:
 
-    Step 1. Go inside to Jenkins container using a root user, run command:
+    
+    Step 1.Get container id
 
-        `docker exec -u 0 -it jenkins bash`
+        `docker ps`
+
+    Step 2. Go inside to Jenkins container using a root user, run command:
+
+        `docker exec -u 0 -it <container id> bash`
 
     Step 2. Then change the ownership of the file using your jenkins user, type command:
 
@@ -88,3 +93,7 @@
     Output:
 
         srw-rw-rw- 1 jenkins jenkins 0 DEC 10 14:30 /var/run/docker.sock
+ 
+    Step 4. Restart container
+
+        `docker restart <container id>`
