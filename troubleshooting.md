@@ -21,7 +21,7 @@
         ```shell
 
         cd fiori
-        npm intsall
+        npm install
 
         ```
 5. **sqlite3 error when running cds watch** 
