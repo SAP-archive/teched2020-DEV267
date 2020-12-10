@@ -14,7 +14,17 @@
 
     run with “sudo …" 
 
-4. **sqlite3 error when running cds watch** 
+4.  **syntaxError: Unexpected token 'export'**
+        use even node version (for example 14.X)
+        and/or run npm install in fiori folder 
+
+        ```shell
+
+        cd fiori
+        npm install
+
+        ```
+5. **sqlite3 error when running cds watch** 
 
     ```shell
     cd fiori 
@@ -24,18 +34,18 @@
     npm install (in the same folder) 
 
     ```
-5. **If cds watch cannot be executed in terminal (Windows)**
+6. **If cds watch cannot be executed in terminal (Windows)**
 
     File / Preferences / Settings: "terminal.integrated.shellArgs.windows": ["-ExecutionPolicy", "Bypass"] 
 
-6. **App is displayed in wrong language**    
+7. **App is displayed in wrong language**    
     Change Language in Google Chrome 
 
-7. **Test Recorder is not displayed in Web Browser** 
+8. **Test Recorder is not displayed in Web Browser** 
 
     Deactivate popup blocker 
 
-8. **Docker: Error response from daemon: i/o timeout (Windows)** 
+9. **Docker: Error response from daemon: i/o timeout (Windows)** 
 
     First try to restart Windows, then if the issue persists, restart docker and run in Admin CMD. If not fixed try these steps: 
 
@@ -49,7 +59,7 @@
    8.  Delete all files from C:\Users\\&lt;name&gt;\AppData\Roaming\Docker 
    9.  Start vmcompute from powershell "net start vmcompute"  
 
-9. **Error response from daemon: open \\.\pipe\docker_engine_linux: The system cannot find the file specified (Windows)** 
+10. **Error response from daemon: open \\.\pipe\docker_engine_linux: The system cannot find the file specified (Windows)** 
 
     Try to fix with some of these: 
     - Restart Windows 
@@ -57,7 +67,7 @@
     - Check your VMWare tools version - 11.0.1 seems to be problematic 
     - Reinstall docker 
 
-10. **If there is some problem with generating initial-credentials** 
+11. **If there is some problem with generating initial-credentials** 
 
     Get container id
 
@@ -71,7 +81,7 @@
     
     and  `rm /var/jenkins_home/config.xml `
 
-11. **Permission denied while trying to connect to the Docker daemon socket**
+12. **Permission denied while trying to connect to the Docker daemon socket**
     To fix the problem, use the step process guide below:
 
     
@@ -97,3 +107,4 @@
     Step 4. Restart container
 
         `docker restart <container id>`
+
