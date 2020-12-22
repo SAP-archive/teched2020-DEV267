@@ -1,5 +1,7 @@
 # DEV267 - Automated SAP Fiori Apps Testing with​ Continuous Delivery
 
+[![REUSE status](https://api.reuse.software/badge/github.com/SAP-samples/teched2020-DEV267)](https://api.reuse.software/info/github.com/SAP-samples/teched2020-DEV267)
+
 ## Description
 
 This repository contains the material for the SAP TechEd 2020 session called DEV267 - Automated SAP Fiori Apps Testing with​ Continuous Delivery
