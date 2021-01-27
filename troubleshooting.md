@@ -44,6 +44,10 @@
 8. **Test Recorder is not displayed in Web Browser** 
 
     Deactivate popup blocker 
+    
+10. **Author or Genre popup is not opened** 
+
+     Take care that you locate the button that is on the right side of the dropdown and not somewhere in between.
 
 9. **Docker: Error response from daemon: i/o timeout (Windows)** 
 
