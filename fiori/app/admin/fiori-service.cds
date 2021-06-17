@@ -18,7 +18,6 @@ annotate AdminService.Books with @(
 				{Value: title},
 				{Value: author_ID},
 				{Value: genre_ID},
-				{Value: publishDate},
 				{Value: descr}
 			]
 		},
@@ -65,9 +64,6 @@ annotate AdminService.Books_texts with @(
 // Add Value Help for Locales
 annotate AdminService.Books_texts {
 	locale @ValueList:{entity:'Languages',type:#fixed}
-}
-annotate AdminService.Books {
-	publishDate @Common.Label: '{i18n>PublishDate}'
 }
 // In addition we need to expose Languages through AdminService
 using { sap } from '@sap/cds/common';
