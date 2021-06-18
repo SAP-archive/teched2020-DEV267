@@ -16,6 +16,9 @@
     "requires": {
       "db": {
         "kind": "sql"
+      },
+      "auth": {
+        "strategy": "dummy"
       }
     }
   }
