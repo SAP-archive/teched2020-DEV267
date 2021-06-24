@@ -1,0 +1,10 @@
+{
+  "name": "uiveri5",
+  "version": "0.0.1",
+  "scripts": {
+    "uiveri5": "uiveri5 --v ./conf.js"
+  },
+  "devDependencies": {
+    "@ui5/uiveri5": "*"
+  }
+}

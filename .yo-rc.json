@@ -1,0 +1,19 @@
+{
+  "generator-template-ui5-project": {
+    "uiveri5pos": {
+      "home": {
+        "action": "",
+        "assertion": ""
+      },
+      "product": {
+        "action": "",
+        "assertion": ""
+      }
+    },
+    "uiveri5specs": [
+      "teched"
+    ],
+    "uiveri5Tests": "uiveri5",
+    "setupCompleted": true
+  }
+}
